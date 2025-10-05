@@ -38,7 +38,7 @@ public class RabbitMQListener {
         log.info("Temperature updated. SensorId {} Temp {}", sensorId, temperature);
         log.info("Headers :{}", headers.toString());*/
         temperatureMonitoringService.processTemperatureReading(temperatureLogData);
-        Thread.sleep(Duration.ofSeconds(5));
+     //   Thread.sleep(Duration.ofSeconds(5));
     }
 
     @SneakyThrows
